@@ -3,7 +3,9 @@ import "./App.css";
 function App() {
   return (
     <>
-      <h1>Vite + React</h1>
+      <div className="text-2xl font-bold underline bg-green-600 font-script">
+        Vite + React
+      </div>
     </>
   );
 }
