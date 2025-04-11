@@ -1,11 +1,15 @@
 import "./App.css";
+import { Header } from "./components/header";
+import { MainSection } from "./components/main-section";
+import { Wrapper } from "./components/wrapper";
 
 function App() {
   return (
     <>
-      <div className="text-2xl font-bold underline bg-green-600 font-script">
-        Vite + React
-      </div>
+      <Wrapper>
+        <Header />
+        <MainSection />
+      </Wrapper>
     </>
   );
 }
