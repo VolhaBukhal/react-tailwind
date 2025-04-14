@@ -34,7 +34,11 @@ export const Header = () => {
         className="flex ml-auto cursor-pointer z-30 xl:hidden"
         onClick={() => setIsShown((prev) => !prev)}
       >
-        {isShown ? <CloseMenuIcon /> : <MenuIcon />}
+        {isShown ? (
+          <CloseMenuIcon data-testid="close-menu-icon" />
+        ) : (
+          <MenuIcon data-testid="open-menu-icon" />
+        )}
       </div>
       {isShown && <MobileMenu isOpen={isShown} />}
     </header>
